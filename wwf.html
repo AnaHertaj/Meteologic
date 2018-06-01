@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+<link rel="stylesheet" href="styles.css" >
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+  <a class="navbar-brand" href="index.html"><i class="fa fa-sun-o btn-outline-warning"></i> WhatsWeather</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+  
+     <li class="nav-item active">
+        <a class="nav-link" href="#">Forecast</a>
+      </li>
+          <li class="nav-item">
+        <a class="nav-link" href="https://openweathermap.org">Open Weather Map</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+
+  <div class="row" id="citySearch">
+      <div class="col-xs-12">
+
+
+          </div>
+    </div>
+
+  <div class="form-row">
+  	 <div class="form-group col-md-2"></div>
+    <div class="form-group col-md-3">
+      <input class="form-control mr-sm-2" type="text" placeholder="Enter City Name" aria-label="Search" name="city" id="city">
+    </div>
+    <div class="form-group col-md-3">
+      <input class="form-control mr-sm-2" type="text" placeholder="Number of Days (1 to 16)"" aria-label="Search" name="days" id="days">
+    </div>
+     <div class="form-group col-md-2"><button class="btn btn-warning y-2 my-sm-0" style="height:40px" id="submitForecast"><i class="fa fa-search"></i></button></div>
+     <div class="form-group col-md-2"></div>
+  </div>
+ 
+
+    <div id="error"></div>
+
+    <div class="card" style="display:none">
+
+      <div id="showWeather"></div>
+
+    </div>
+
+    <div class="row table-responsive"" id="forecastTable" style="display:none">
+
+        <table class="table table-striped table-xs">
+          
+           <div id="header" class="text-center"></div>
+           
+            <thead class="bg-warning"> 
+                <tr>  
+                    <th>DATE</th>
+                    <th></th>
+                    <th>WEATHER</th>
+                    <th>MIN./MAX. Temperature</th>
+                </tr>
+            </thead>
+            
+            <tbody id="forecastWeather">
+                
+            </tbody>
+            
+        </table>
+    </div>
+
+</div>
+
+
+<div class="footer">
+
+  <div class="footer-copyright text-center mt-4">
+    <span class="text-secondary">© 2018 Copyright:</span><a href="" class="text-warning"> WhatsWeather.com</a>
+  </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+ <script src="wf.js"></script> 
+
+  </body>
+
+
+</html>
