@@ -5,7 +5,8 @@
   }
 
   a.navbar-brand{
-     color:#ffc107 !important;
+    font-weight: 700;
+    letter-spacing: 0.12em;
      display: flex;
      align-items: center;
   }
