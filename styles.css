@@ -6,6 +6,8 @@
 
   a.navbar-brand{
      color:#ffc107 !important;
+     display: flex;
+     align-items: center;
   }
 
   #citySearch{
@@ -72,4 +74,4 @@
 
   .btn-outline-warning{
     font-size: xx-large;
-  }
+  } 
